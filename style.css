@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    color: #ededed;
+    background-color: #222;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    position: realtive;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity:0;
+    animation: slideRight is ease forwards;
+
+}
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover {
+    color:purple;
+}
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(dark-gradient-background-with-copy-space_53876-99548.jpg.avif) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 10% 0;
+}
+.home .content {
+    flex: 2;
+    color: #fff;
+}
+.home .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.content{
+max-width: 600px;    
+}
+.content h3{
+ font-size: 56px;
+ font-weight: 700;
+ margin:-3px 0;    
+}
+.content h3 span {
+   color:purple; 
+}
+.content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+
+}
+.content p{
+    font-size:20px ;
+}
+.home-sci a{
+display: inline-flex; 
+justify-content: center; 
+align-items: center;
+width: 40px;
+ height: 40px;
+background: transparent;
+ border: 2px solid •purple;
+  border-radius: 50%; 
+  font-size: 20px;
+  color:purple;
+text-decoration: none;
+margin: 30px 15px 30px 0;
+}
+
+.home-sci a:hover{
+    background: purple;
+    color: #ed6af4;
+    box-shadow: 0 0 20px purple;
+
+}
+.btn-box{
+    display: inline;
+    padding: 12px 28px;
+    background: purple;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #f00ed2;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-box:hover{
+    box-shadow: 0 0 5px rgb(244, 120, 244),
+    0 0 25px rgb(244, 120, 244), 0 0 50px rgb(244, 120, 244), 0 0 100px rgb(244, 120, 244), 0 0 200px rgb(244, 120, 244),
+}
+@keyframe slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(-100px);
+        opacity:1;
+    }
+}
